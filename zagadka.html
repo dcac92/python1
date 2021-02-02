@@ -1,0 +1,47 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+var corr = 0;
+var incorr = 0;
+	for (var i = 1; i < 3; i++){
+
+		if (i == 1){
+			var answer = 'утюг';
+			var tryanswer = prompt('В Полотняной стране \nПо реке Простыне\nПлывет пароход\nТо назад, то вперед,\nА за ним такая гладь —Ни морщинки не видать.');
+			if (answer == tryanswer){
+				alert('Правильно!');
+				corr++
+			} else {
+				alert('Неправильно. Это '+ answer);
+				incorr++;}
+
+		}
+
+		if (i == 2){
+			var answer = 'водопровод';
+			var tryanswer = prompt('Речка спятила с ума —\nПо домам пошла сама.');
+			if (answer == tryanswer){
+				alert('Правильно!');
+				corr++;
+			} else {
+				alert('Неправильно. Это '+ answer);
+				incorr++;
+			}
+		}	
+
+		if (i == 2){
+			var answer = 'граммофон';
+			var tryanswer = prompt('Музыкант, певец, рассказчик —\nА всего труба да ящик.');
+			if (answer == tryanswer){
+				alert('Правильно!');
+				corr++;
+			} else {
+				alert('Неправильно. Это '+ answer);
+				incorr++;
+			}
+		}
+			
+	}
+
+	alert('Правильных ответов '+ corr +'\nНеправильных '+ incorr );
+	</script>
